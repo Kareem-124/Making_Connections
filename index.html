@@ -33,7 +33,7 @@
                 <h3>Seattle</h3>
                 <p>Developer | Engineer | Problem Solver Master of the shadows and the Internet!</p>
                 <img src="gear.png" alt="gear_Icon">
-                <a href="http://">edit profile</a>
+                <a href="#" onclick="changeName()">edit profile</a>
                 <img src="user-circle.png" alt="CardInfo_profile_icon" class="profile_icon">
             </div>
 <!-------------------------------Education container starts here------------------------->
@@ -52,28 +52,28 @@
         <div class="main_col">
             <div class="connectionsRequest_Container">
                 <header class="black_header">
-                <div class="header_center_circle "><p>+2</p></div>
+                <div class="header_center_circle"><p>2</p></div>
                 <div class="header_center_text">Requested Connections</div>
                 </header>
                 <main class="main_connection_request_container">
-                    <div class="request_row">
+                    <div class="request_row" id="id1">
                         <img src="user-circle.png" class="icon_profile_image">
                         <p class="font request_name">Todd E</p>
-                        <img src="accept-circle.png" class="icon_accept_circle">
-                        <img src="close-circle.png" class="icon_reject_circle">
+                        <img src="accept-circle.png" class="icon_accept_circle" onclick="accept(1)">
+                        <img src="close-circle.png" class="icon_reject_circle" onclick="deleteRequest(1)">
                     </div>
-                    <div class="request_row">
+                    <div class="request_row" id="id2">
                         <img src="user-circle.png" class="icon_profile_image">
                         <p class="font request_name">Phile K</p>
-                        <img src="accept-circle.png" class="icon_accept_circle">
-                        <img src="close-circle.png" class="icon_reject_circle">
+                        <img src="accept-circle.png" class="icon_accept_circle" onclick="accept(2)">
+                        <img src="close-circle.png" class="icon_reject_circle" onclick="deleteRequest(2)">
                     </div>
                 </main>
             </div>
         <!-------------------------------Connection starts here------------------------->
             <div class="connections_Container">
                 <header class="black_header">
-                    <div class="header_center_circle"><p>+500</p></div>
+                    <div class="header_center_circle"><p>418</p></div>
                     <div class="header_center_text"> Connections</div>
                 </header>
                 <main class="connections_main">
@@ -103,4 +103,5 @@
 
     </main>
 </body>
+<script src="script.js"></script>
 </html>
